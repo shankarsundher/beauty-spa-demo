@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+/* ------headercss-------- */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0c593;
+    background-repeat: no-repeat;
+    background-position:right 70%;
+    background-image: url(images/bckd3.avif);
+    background-size: 45%;
+}
+.header{
+    background-color: #f0c593;
+}
+.headings{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.logo{
+    padding: 5px 5px;
+    margin: 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .head li{
+    display: inline-block;
+    margin:0 10px;
+    list-style: none;
+    padding: 0 30px;
+}
+nav .head li a{
+    color: #fff;
+    text-decoration: none; 
+    font-size: 23px;
+    /* doubt while using this feature why it's not perfoming as expected*/
+    /* position:relative;
+    transition: transform 0.5s; */
+}
+nav .head li a:hover {
+   color:rgb(216, 135, 135);
+   /* position:fixed;
+   transform:scale(1.2); */
+   
+}
+nav .rightBtn li{
+   display: inline-block;
+   align-items: center;
+   margin: 0 20px;
+   padding: 5px 5px;
+   border-radius: 10px;
+   background:#f0c593;
+   list-style: none;
+}
+nav .rightBtn li button{
+    color:rgb(216, 135, 135);
+    font-size: 16px;
+    cursor: pointer;
+}
+nav .rightBtn li button:hover{
+    background-color:#9b6c82;
+}
+.bookBtn{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: #f0c593;
+}
+.welcome-page{
+    margin: 40px;
+    padding: 30px
+}
+.heading h2{
+    padding: 40px 0;
+    font-size: 50px;
+}
+.heading p{
+    font-size: 20px;
+}
+.heading a{
+    text-decoration: none;
+}
+.heading button{
+    display: block;
+    margin: 50px 0;
+    padding: 20px 30px;
+    border: 1px solid #f0c593;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+}
+.heading button:hover{
+    background-color:#9b6c82;
+    position:absolute;
+    transform:scale(1.05);
+}
+/* -----------aboutcss------------ */
+#about{
+    background-color: #fff;
+    
+}
+.about-head{
+color: rgb(106, 177, 206);
+display:flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.about-head h5{
+   font-size: 15px;
+   margin-top: 40px;
+   padding: 10px 10px;
+}
+.about-head p{
+   font-size:50px;
+   margin-top: 10px;
+   padding: 5px 0;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.about-details ul{
+    margin: 40px 20px 0 0;
+    color:teal;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    
+}
+.about-details ul li{
+ margin: 0 0 70px 25px;
+ padding: 5px 5px;
+ font-size: 20px;
+ /* border: 2px solid rgb(240, 186, 195); */
+border-radius: 10px;
+transition: background 0.5s, transform 0.5s;
+}
+.about-details ul li h4{
+    font-size: 30px;
+    padding: 15px 0 20px 0;
+}
+
+.about-details ul li:hover{ 
+    background: #d4d0d0;
+transform: translateY(-10px);
+}
+
+
+/* -----------servicescss------------- */
+#services{
+    background-image: url(/images/bcknd.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.serviceHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.serviceHead h5{
+    margin-top: 100px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.serviceHead h2{
+    padding: 40px 0 40px 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+.serviceHead p{
+    font-size: 20px;
+}
+.serviceType{
+    margin: 50px 50px 0 50px;
+}
+.serviceType ul{
+    display: grid;
+    list-style: none;
+    margin: 10px 30px 0 30px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.serviceType ul li{
+    /* doubt adding border looks good r not */
+    padding: 25px 50px 25px 50px;
+    /* border-radius: 10px;
+    border: 1px solid #fff; */
+}
+.serviceType ul li h4{
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.serviceType ul li p{
+font-size: 20px;
+margin: 20px 0 20px 0;
+}
+.serviceType ul li h6{
+    font-size: 16px;
+}
+.serviceType ul li button{
+    padding: 10px 10px;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.serviceType ul li button:hover{
+    background: none;
+    color:rgb(216, 135, 135);
+    transform: translateX(1px);
+}
+/* -----------ReviewsCss------------- */
+#review{
+    background:rgb(214, 236, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#review h3{
+    margin-top: 60px;
+    font-size: 40px;
+    color:rgb(53, 153, 156);
+}
+/* doubt - Any other way to do this center */
+#review p{
+    text-align: center;
+    margin: 20px 200px 30px 200px;
+    font-size: 20px;
+    color:rgb(53, 153, 156);
+}
+#review img{
+    width:80px;
+    border-radius: 24px 48px;
+}
+
+/* ----------contact------------- */
+#contact{
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color:rgb(53, 153, 156);
+}
+.contactLeft{
+   flex-basis: 60%;
+   margin: 60px 100px 0 30px ;
+}
+.contactRight{
+   flex-basis: 40%;
+   margin: 100px 50px 0 100px;
+}
+.contactRight p{
+    margin-top: 30px;
+    text-decoration: royalblue;
+    font-size: 25px;
+}
+.contactLeft h4{
+    font-size: 22px;
+    margin: 0 0 20px 30px;
+}
+.contactLeft h3{
+    font-size: 35px;
+    margin: 0 0 20px 30px;
+}
+.contactLeft p{
+    font-size: 16px;
+    margin: 0 50px 20px 30px;
+}
+.contactLeft h6{
+    font-size: 16px;
+    margin: 0 0 10px 30px;
+}
+.formData{
+    font-size: 25px;
+} 
+.formData input{
+    width: 80%;
+    margin: 5px 0 5px 0;
+    padding: 8px 5px;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.formData button{
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.formData button:hover{
+    background: #9b6c82;
+    transform: translateX(1px);
+}
+.openTime{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background: #fff;
+    color:rgb(53, 153, 156);
+}
+.timeLeft{
+    margin: 0 30px 40px 60px;
+
+}
+.timeLeft h4{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.timeLeft p{
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 1px;
+
+}
+.contactNumber{
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+.contactNumber h4{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.contactNumber p{
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 1px;
+}
+.offer{
+    margin: -40px 0 0 25%;
+    font-size: 20px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+/*---------- footerCSS ------------*/
+#footer{
+    background: rgb(2, 54, 54);
+}
+.footerUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footerUp img{
+    width: 70px;
+    height: 60px;
+    margin: 60px 0 0 70px;
+    border-radius: 20px;
+}
+.footerUp h4{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight:500;text-align: center;
+}
+.footerUp p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.footerUp button{
+margin: 20px 0 50px 28px;
+padding: 3px;
+cursor: pointer;
+color: blue;
+}
+hr .bottomLine{
+   margin-bottom: 40px;
+}
+.copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+/* About Us page style */
+.teamData{
+    background: #fff;
+    color: black;
+}
+.teamHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   color:rgb(53, 153, 156);
+   
+}
+.teamHead h2{
+    font-size: 35px;
+    margin: 40px 0 20px 0;
+}
+.teamHead p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20% 0 20%;
+}
+.teamPerson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px 0 0;
+}
+.teamPerson img{
+   margin-left: 15%;
+   width: 70%;
+}
+.teamPerson h3{
+    text-align: center;
+    color:rgb(53, 153, 156);
+    margin: 10px 0 10px 0;
+}
+.teamPerson p{
+    color:rgb(53, 153, 156);
+    text-align: center;
+    padding: 0 35px 0 35px;
+}
+.teamPerson ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 40px 0;
+}
+.teamPerson ul li a{
+    padding: 5px;
+    color:rgb(53, 153, 156);
+}
